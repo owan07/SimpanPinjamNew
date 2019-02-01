@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteOff"
+    tools:context=".SimpanPinjamPengajuanBaru">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/BluePrimer" />
+
+    <RelativeLayout
+        android:id="@+id/rlv_ajuanPinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_kotakputihabuabu">
+
+        <TextView
+            android:id="@+id/tv_tglPinjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Tanggal Pengajuan : 7 Juli 2018"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tglPinjam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Jumlah Pinjaman"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="10sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/jmlPinjaman_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView47"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/bg_kotakputih">
+
+            <EditText
+                android:id="@+id/etJumlahPinjaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/BluePrimer"
+                android:ems="10"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:hint="Rp."
+                android:inputType="number"
+                android:textColor="@color/BluePrimer"
+                android:textColorHint="@color/BluePrimer"
+                android:textSize="14sp" />
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlv_ajuanPinjaman"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Jenis Pinjaman"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spin_jenisPinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_spinner"
+        android:entries="@array/jnsPinjaman"
+        android:popupBackground="@color/GraySkunder"
+        tools:ignore="NewApi" />
+
+    <TextView
+        android:id="@+id/textView243"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_jenisPinjaman"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Lama Angsuran"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spin_lamaAngsuran"
+        style="@android:style/Widget.Material.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView243"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_spinner"
+        android:fontFamily="@font/poppins_light"
+        tools:ignore="NewApi" />
+
+    <TextView
+        android:id="@+id/textView245"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_lamaAngsuran"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Keterangan"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/textView245"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/GraySkunder"
+        android:fontFamily="@font/poppins_light"
+        android:inputType="textMultiLine"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnRincianSimulasi"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_above="@+id/btnKirimPengajuanPinjaman"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_kotakbiruputih"
+        android:fontFamily="@font/poppins"
+        android:text="Kirim Pengajuan"
+        android:textAllCaps="false"
+        android:textColor="@color/BluePrimer"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnKirimPengajuanPinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bgkotak_biru"
+        android:fontFamily="@font/poppins"
+        android:text="Kirim Pengajuan"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

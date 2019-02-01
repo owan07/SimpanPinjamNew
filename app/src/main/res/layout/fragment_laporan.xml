@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GraySkunder"
+    tools:context=".Simpin">
+
+    <TextView
+        android:id="@+id/tv_judulApp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/BluePrimer"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/title_laporan"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_judulApp"
+        android:layout_centerHorizontal="true"
+        android:src="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="182dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/bt_laporanPembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/textView8"
+        android:layout_toLeftOf="@+id/textView8"
+        android:background="@drawable/icon_laporan_pembayaran"
+        android:fontFamily="@font/poppins_light"
+        android:paddingLeft="8dp"
+        android:paddingTop="80dp"
+        android:paddingRight="8dp"
+        android:text="Lihat data laporan\npembayaran pinjaman Anda"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bt_laporanPinjaman"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/textView8"
+        android:background="@drawable/icon_laporan_pinjaman"
+        android:fontFamily="@font/poppins_light"
+        android:paddingLeft="8dp"
+        android:paddingTop="80dp"
+        android:paddingRight="8dp"
+        android:text="Lihat data laporan\npengajuan pinjaman Anda"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bt_laporanSimpanan"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_below="@id/bt_laporanPembayaran"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/textView8"
+        android:background="@drawable/icon_laporan_simpana"
+        android:fontFamily="@font/poppins_light"
+        android:paddingLeft="8dp"
+        android:paddingTop="80dp"
+        android:paddingRight="8dp"
+        android:text="Lihat data laporan\nsimpanan Anda"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+</RelativeLayout>

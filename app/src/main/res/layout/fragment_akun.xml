@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GraySkunder"
+    tools:context=".Akun">
+
+    <TextView
+        android:id="@+id/tv_judulApp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/BluePrimer"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/title_akun"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light" />
+
+    <RelativeLayout
+        android:id="@+id/rlv_akunHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_judulApp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/BluePrimer">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imvProfilAnggotaKup"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/picture" />
+
+        <TextView
+            android:id="@+id/tv_NamaSPBerandaAktif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imvProfilAnggotaKup"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/imvProfilAnggotaKup"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Angga Saputra"
+            android:textColor="@color/White"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_jenisKelaminAnggota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_NamaSPBerandaAktif"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/imvProfilAnggotaKup"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Laki-laki"
+            android:textColor="@color/White"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_bioadataAnggotaAkun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlv_akunHeader"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_kotakputihabuabu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvIdAnggotaKu"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/GraySkunder"
+            android:fontFamily="@font/poppins"
+            android:gravity="fill_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="ID Anggota"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_IdAnggotaKuperasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/GraySkunder"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="AG0017"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_nohp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/GraySkunder"
+            android:fontFamily="@font/poppins"
+            android:gravity="fill_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="No. Handphone"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_NoTelpSPBerandaAktif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/GraySkunder"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="0812968927007"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/GraySkunder"
+            android:fontFamily="@font/poppins"
+            android:gravity="fill_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Email"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_EmailSPBerandaAktif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/GraySkunder"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="angga@gmail.com"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_regis"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/GraySkunder"
+            android:fontFamily="@font/poppins"
+            android:gravity="fill_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Tanggal Registrasi"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_RegistrasiSPBerandaAktif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/GraySkunder"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="7 Juli 2018"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_editProvil"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/GreenSekunder"
+            android:drawableLeft="@drawable/ic_edit_blue"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:paddingLeft="126dp"
+            android:paddingRight="120dp"
+            android:text="Ubah Profil"
+            android:textColor="@color/BluePrimer"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_keluarAkun"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_merahkotakfull"
+        android:fontFamily="@font/poppins"
+        android:text="Keluar"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#06A3DE</color>
+    <color name="colorAccent">#424242</color>
+    <color name="bgBottomNavigation">#424242</color>
+    <color name="BluePrimer">#06A3DE</color>
+    <color name="BlueSekunder">#34CFEF</color>
+    <color name="Purple">#71A9FB</color>
+    <color name="RedPrimer">#FE0E58</color>
+    <color name="merah">#ffcc0000</color>
+    <color name="RedSekunder">#FFD1D1</color>
+    <color name="GreenPrimer">#1DBE43</color>
+    <color name="GreenSekunder">#E0F8E6</color>
+    <color name="BlackPrimer">#000000</color>
+    <color name="BlackSekunder">#39404A</color>
+    <color name="GrayPrimer">#999999</color>
+    <color name="GraySkunder">#F2F2F2</color>
+    <color name="White">#FFFFFF</color>
+    <color name="WhiteOff">#FAFAFA</color>
+</resources>

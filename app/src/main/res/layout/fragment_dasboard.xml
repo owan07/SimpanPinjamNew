@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dasboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/tv_judulApp"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/BluePrimer"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/title_dasboard"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:id="@+id/tv_namaKoperasi"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/tv_judulApp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="KOPERASI : KSU ARNAWA INTECH"
+                android:textColor="@color/BluePrimer"
+                android:textSize="12sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvProfilAnggotaKup"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/tv_namaKoperasi"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/picture" />
+
+            <TextView
+                android:id="@+id/tv_NamaSPBerandaAktif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_namaKoperasi"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/imvProfilAnggotaKup"
+                android:layout_toRightOf="@+id/imvProfilAnggotaKup"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Angga Saputra"
+                android:textColor="@color/BlackPrimer"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_JabatanSPBerandaAktif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_NamaSPBerandaAktif"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_toEndOf="@+id/imvProfilAnggotaKup"
+                android:layout_toRightOf="@+id/imvProfilAnggotaKup"
+                android:drawableLeft="@drawable/icon_anggota"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="Anggota"
+                android:textColor="@color/BlackPrimer"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_NoTelpSPBerandaAktif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_JabatanSPBerandaAktif"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_toEndOf="@+id/imvProfilAnggotaKup"
+                android:layout_toRightOf="@+id/imvProfilAnggotaKup"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="0812968927007"
+                android:textColor="@color/BlackPrimer"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_AlamatSPBerandaAktif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_NoTelpSPBerandaAktif"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_toEndOf="@+id/imvProfilAnggotaKup"
+                android:layout_toRightOf="@+id/imvProfilAnggotaKup"
+                android:drawableLeft="@drawable/icon_location"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="Jl. Lorem Ipsum, Dolor sit amet"
+                android:textColor="@color/BlackPrimer"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvIdAnggotaKu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imvProfilAnggotaKup"
+                android:layout_alignLeft="@+id/imvProfilAnggotaKup"
+                android:layout_alignRight="@+id/imvProfilAnggotaKup"
+                android:layout_marginTop="8dp"
+                android:background="@color/GraySkunder"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="ID Anggota :"
+                android:textColor="@color/BlackPrimer"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_IdAnggotaKuperasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIdAnggotaKu"
+                android:layout_alignLeft="@+id/tvIdAnggotaKu"
+                android:layout_alignRight="@+id/tvIdAnggotaKu"
+                android:layout_marginTop="-2dp"
+                android:background="@color/GraySkunder"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="AG0017"
+                android:textColor="@color/BlackPrimer"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlvPpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_IdAnggotaKuperasi"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:background="@color/Purple">
+
+                <TextView
+                    android:id="@+id/textView87"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Pengajuan Pinjaman Mutakhir"
+                    android:textColor="@color/White"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_TanggalPengajuanSPBerandaAktif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView87"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="-6dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="20 Maret 2018 - 11:59"
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView92"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_below="@+id/tv_TanggalPengajuanSPBerandaAktif"
+                    android:text="Nominal"
+                    android:textColor="@color/White"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_NominalPengajuanSPBerandaAktif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView92"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="-6dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Rp. 12.000.000,-"
+                    android:textColor="@color/White"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/Linear_status"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView87"
+                    android:layout_alignBottom="@+id/tv_NominalPengajuanSPBerandaAktif"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_kotakputih"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="bottom|center_horizontal"
+                        android:text="Status"
+                        android:textColor="@color/BlackPrimer"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="top|center_horizontal"
+                        android:text="Diterima"
+                        android:textColor="@color/GreenPrimer" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_saldoTagihan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlvPpm"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+
+                <RelativeLayout
+                    android:id="@+id/rlv_saldoTagihan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rlvSaldoSimpanan"
+                        android:layout_width="300dp"
+                        android:layout_height="165dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/bg_kotakputihabuabu">
+
+                        <TextView
+                            android:id="@+id/textView99"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/bgkotak_biru"
+                            android:drawableStart="@drawable/icon_wallet_white"
+                            android:drawableLeft="@drawable/icon_wallet_white"
+                            android:drawablePadding="8dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp"
+                            android:text="Saldo Simpanan"
+                            android:textColor="@color/White" />
+
+                        <TextView
+                            android:id="@+id/tv_pembatesHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_below="@+id/textView99"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="-6dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@color/White"
+                            android:gravity="center_vertical"
+                            android:text="owan"
+                            android:textColor="@android:color/transparent" />
+
+                        <TextView
+                            android:id="@+id/tv_pembatesVertikal"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignTop="@+id/tv_pembatesHorizontal"
+                            android:layout_toLeftOf="@+id/tvJumlahSimpanan"
+                            android:background="@color/GrayPrimer"
+                            android:text="owan"
+                            android:textColor="@android:color/transparent" />
+
+                        <TextView
+                            android:id="@+id/tvimpananSukarela"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_pembatesHorizontal"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Simpanan Sukarela"
+                            android:textColor="@color/BlackPrimer"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textSimpananSukarela"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvimpananSukarela"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="-4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Rp. 500.000"
+                            android:textColor="@color/GreenPrimer"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvSimpananPokok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textSimpananSukarela"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Simpanan Pokok"
+                            android:textColor="@color/BlackPrimer"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textSimpananPokok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvSimpananPokok"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="-4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Rp. 700.000"
+                            android:textColor="@color/GreenPrimer"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvSimpananWajib"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textSimpananPokok"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Simpanan Wajib"
+                            android:textColor="@color/BlackPrimer"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textSimpananWajib"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvSimpananWajib"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="-4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Rp. 1.700.000"
+                            android:textColor="@color/GreenPrimer"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvJumlahSimpanan"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_pembatesHorizontal"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Jumlah Simpanan"
+                            android:textColor="@color/BlackPrimer"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textJumlahSimpanan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvJumlahSimpanan"
+                            android:layout_alignLeft="@+id/tvJumlahSimpanan"
+                            android:layout_alignRight="@+id/tvJumlahSimpanan"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Rp. 2.900.000"
+                            android:textColor="@color/GreenPrimer"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlvTagihanKredit"
+                        android:layout_width="300dp"
+                        android:layout_height="165dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@+id/rlvSaldoSimpanan"
+                        android:background="@drawable/bg_kotakputihabuabu">
+
+                        <TextView
+                            android:id="@+id/textView103"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/bgkotak_biru"
+                            android:drawableStart="@drawable/icon_report_white"
+                            android:drawableLeft="@drawable/icon_report_white"
+                            android:drawablePadding="8dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp"
+                            android:text="Saldo Simpanan"
+                            android:textColor="@color/White" />
+
+                        <TextView
+                            android:id="@+id/tv_pembatesHorizontals"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_below="@+id/textView103"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="-6dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@color/White"
+                            android:gravity="center_vertical"
+                            android:text="owan"
+                            android:textColor="@android:color/transparent" />
+
+                        <TextView
+                            android:id="@+id/tv_pembatesVertikals"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignTop="@+id/tv_pembatesHorizontals"
+                            android:layout_toLeftOf="@+id/textSisaTagihan"
+                            android:background="@color/GrayPrimer"
+                            android:text="owan"
+                            android:textColor="@android:color/transparent" />
+
+                        <TextView
+                            android:id="@+id/textView109"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_pembatesHorizontals"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Pokok Pinjaman"
+                            android:textColor="@color/BlackPrimer"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textPokokPinjaman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView109"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="-4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Rp. 4.500.000"
+                            android:textColor="@color/GreenPrimer"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView142"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textPokokPinjaman"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Tagihan + Denda"
+                            android:textColor="@color/BlackPrimer"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textTagihanDenda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView142"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="-4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Rp. 4.584.500"
+                            android:textColor="@color/GreenPrimer"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView213"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textTagihanDenda"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Dibayar"
+                            android:textColor="@color/BlackPrimer"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textDibayar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView213"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="-4dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="top"
+                            android:text="Rp. 0"
+                            android:textColor="@color/GreenPrimer"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView215"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_pembatesHorizontals"
+                            android:layout_alignLeft="@+id/textSisaTagihan"
+                            android:layout_alignRight="@+id/textSisaTagihan"
+                            android:layout_marginTop="32dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Sisa Tagihan"
+                            android:textColor="@color/BlackPrimer"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/textSisaTagihan"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView215"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Rp. 4.584.500"
+                            android:textColor="@color/GreenPrimer"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hsv_saldoTagihan"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_abuabu_putih_kotak">
+
+                <TextView
+                    android:id="@+id/textView223"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="Keterangan"
+                    android:textColor="@color/BluePrimer"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_medium" />
+
+                <TextView
+                    android:id="@+id/textView224"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView223"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@color/GraySkunder"
+                    android:gravity="center"
+                    android:text="Angsuran Bulan : Agustus"
+                    android:textColor="@color/BlackPrimer"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppins" />
+
+                <TextView
+                    android:id="@+id/textView226"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView224"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@color/GraySkunder"
+                    android:gravity="center"
+                    android:text="Rp. 516.500"
+                    android:textColor="@color/GreenPrimer"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_medium" />
+
+                <TextView
+                    android:id="@+id/tv_pembatesHorizontalq"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView226"
+                    android:layout_centerHorizontal="true"
+                    android:text="owan"
+                    android:textColor="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/textView227"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView226"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@+id/tv_pembatesHorizontalq"
+                    android:background="@color/GraySkunder"
+                    android:gravity="center"
+                    android:text="Pembayaran"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins" />
+
+                <TextView
+                    android:id="@+id/textPembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView227"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_toLeftOf="@+id/tv_pembatesHorizontalq"
+                    android:background="@color/GraySkunder"
+                    android:gravity="center"
+                    android:text="Lancar"
+                    android:textColor="@color/GreenPrimer"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_medium" />
+
+                <TextView
+                    android:id="@+id/textView228"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView226"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_toRightOf="@+id/tv_pembatesHorizontalq"
+                    android:background="@color/GraySkunder"
+                    android:gravity="center"
+                    android:text="Tanggal Tempo"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins" />
+
+                <TextView
+                    android:id="@+id/textTglTempo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView228"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_toRightOf="@+id/tv_pembatesHorizontalq"
+                    android:background="@color/GraySkunder"
+                    android:gravity="center"
+                    android:text="02 Des 2018"
+                    android:textColor="@color/BluePrimer"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_medium" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

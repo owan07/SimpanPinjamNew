@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dasboard"
+        android:icon="@drawable/icon_dashboard"
+        android:title="@string/title_dasboard" />
+
+    <item
+        android:id="@+id/navigation_simpin"
+        android:icon="@drawable/icon_simpanpinjam"
+        android:title="@string/title_simpin" />
+
+    <item
+        android:id="@+id/navigation_laporan"
+        android:icon="@drawable/icon_laporan"
+        android:title="@string/title_laporan" />
+
+    <item
+        android:id="@+id/navigation_akun"
+        android:icon="@drawable/icon_akun"
+        android:title="@string/title_akun" />
+
+</menu>
