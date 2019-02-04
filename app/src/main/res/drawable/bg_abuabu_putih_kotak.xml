@@ -10,7 +10,6 @@
         android:startColor="@android:color/white"
         android:centerColor="@android:color/white"
         android:endColor="@android:color/white"
-        android:angle="270"
         />
 
 </shape>

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="16dp"
     android:background="@drawable/bg_kotakputihabuabu">
 
@@ -12,12 +12,12 @@
         android:layout_height="16dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="8dp" />
 
     <TextView
         android:id="@+id/tv_tglInput"
-        android:layout_width="150dp"
-        android:layout_height="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
         android:layout_alignTop="@+id/tv_pembatesHorizontal"
         android:layout_marginLeft="16dp"
         android:layout_toLeftOf="@+id/tv_pembatesHorizontal"
@@ -31,14 +31,162 @@
     <TextView
         android:id="@+id/tvstatus"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="26dp"
         android:layout_alignTop="@+id/tv_pembatesHorizontal"
         android:layout_marginRight="16dp"
         android:layout_toRightOf="@+id/tv_pembatesHorizontal"
         android:background="@color/GreenSekunder"
         android:fontFamily="@font/poppins"
-        android:gravity="right|center_vertical"
-        android:text="Status:"
+        android:gravity="center"
+        android:text="Status:Diterima"
         android:textColor="@color/BlackPrimer"
         android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/lnr_kiri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="-8dp"
+        android:layout_toLeftOf="@+id/lnr_tengah"
+        android:background="@drawable/bg_kotakputihabuabu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Jumlah Pinjaman"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Rp. 12.000.000"
+            android:textColor="@color/GreenPrimer"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_kanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/lnr_tengah"
+        android:background="@drawable/bg_kotakputihabuabu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Lama Angsuran"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="12 Bulan"
+            android:textColor="@color/GreenPrimer"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_tengah"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/bg_abuabu_putih_kotak"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Jumlah Angsuran"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Rp. 1.021.500"
+            android:textColor="@color/GreenPrimer"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnr_tengah"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Keterangan"
+        android:textColor="@color/BlackPrimer"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="TextView"
+        android:textColor="@color/BlackPrimer"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bgkotak_biru"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Tanggal Update : 15 Maret 2019"
+        android:textColor="@color/White"
+        android:textSize="10sp" />
+
 </RelativeLayout>

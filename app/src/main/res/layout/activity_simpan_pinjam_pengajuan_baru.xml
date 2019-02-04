@@ -74,7 +74,8 @@
                 android:inputType="number"
                 android:textColor="@color/BluePrimer"
                 android:textColorHint="@color/BluePrimer"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:focusable="false"/>
 
         </android.support.design.widget.TextInputLayout>
     </RelativeLayout>
@@ -146,7 +147,7 @@
     <EditText
         android:id="@+id/editText8"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/textView245"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
@@ -154,7 +155,8 @@
         android:background="@color/GraySkunder"
         android:fontFamily="@font/poppins_light"
         android:inputType="textMultiLine"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:focusable="false"/>
 
     <Button
         android:id="@+id/btnRincianSimulasi"
@@ -167,7 +169,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/bg_kotakbiruputih"
         android:fontFamily="@font/poppins"
-        android:text="Kirim Pengajuan"
+        android:text="Lihat Rincian Simulasi Pinjaman"
         android:textAllCaps="false"
         android:textColor="@color/BluePrimer"
         android:textSize="12sp"
