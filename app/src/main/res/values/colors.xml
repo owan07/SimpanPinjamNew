@@ -12,6 +12,7 @@
     <color name="merah">#ffcc0000</color>
     <color name="RedSekunder">#FFD1D1</color>
     <color name="GreenPrimer">#1DBE43</color>
+    <color name="GreenTransparant">#641dbe43</color>
     <color name="GreenSekunder">#E0F8E6</color>
     <color name="BlackPrimer">#000000</color>
     <color name="BlackSekunder">#39404A</color>

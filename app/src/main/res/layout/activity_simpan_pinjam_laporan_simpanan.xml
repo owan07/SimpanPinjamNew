@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SimpanPinjamLaporanSimpanan">
+    tools:context=".SimpanPinjamLaporanSimpanan"
+    android:background="@color/WhiteOff">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_pembates"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="owan"
+        android:textColor="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/lnr_laporanSImpananSukarela"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/tv_pembates"
+        android:background="@drawable/bg_kotakputihabuabu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_lapSimpSukarela"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="bottom|center"
+            android:text="Rp. 500.000"
+            android:textColor="@color/GreenPrimer"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="top|center"
+            android:text="Laporan Simpanan\nSukarela"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_laporanSImpananPokok"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/tv_pembates"
+        android:background="@drawable/bg_kotakputihabuabu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_lapSimpPokok"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="bottom|center"
+            android:text="Rp. 700.000"
+            android:textColor="@color/GreenPrimer"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="top|center"
+            android:text="Laporan Simpanan\nPokok"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_laporanSImpananWajib"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/lnr_laporanSImpananSukarela"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/tv_pembates"
+        android:background="@drawable/bg_kotakputihabuabu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_lapSimpWajib"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="bottom|center"
+            android:text="Rp. 1.700.000"
+            android:textColor="@color/GreenPrimer"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="top|center"
+            android:text="Laporan Simpanan\nWajib"
+            android:textColor="@color/BlackPrimer"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

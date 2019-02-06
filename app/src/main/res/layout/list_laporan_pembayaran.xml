@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/bg_kotakputihabuabu">
 
+    <TextView
+        android:id="@+id/tv_notifPembayaran"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_kotakbirubirumuda"
+        android:drawableStart="@drawable/ic_cheklis_green"
+        android:fontFamily="@font/poppins"
+        android:text="Pembayaran Tepat"
+        android:textColor="@color/GreenPrimer"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_tanggalTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/tv_notifPembayaran"
+        android:fontFamily="@font/poppins"
+        android:text="20 Agustus 2018 - 14:00"
+        android:textColor="@color/BlackPrimer"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tvkdtrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tanggalTransaksi"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/tv_notifPembayaran"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Kode Transaksi"
+        android:textColor="@color/BlackPrimer"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvKodeTransaksiLapPembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tvkdtrs"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-8dp"
+        android:layout_toRightOf="@+id/tv_notifPembayaran"
+        android:fontFamily="@font/poppins"
+        android:text="PNJ000001"
+        android:textColor="@color/BluePrimer"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Jumlah Tagihan"
+        android:textColor="@color/BlackPrimer"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_jumlahTagihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvkdtrs"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-6dp"
+        android:layout_marginRight="16dp"
+        android:text="Rp. 1.021.500"
+        android:textColor="@color/GreenPrimer"
+        android:textSize="18sp" />
 </RelativeLayout>

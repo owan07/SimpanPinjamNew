@@ -75,7 +75,7 @@
                 android:textColor="@color/BluePrimer"
                 android:textColorHint="@color/BluePrimer"
                 android:textSize="14sp"
-                android:focusable="false"/>
+                android:cursorVisible="false"/>
 
         </android.support.design.widget.TextInputLayout>
     </RelativeLayout>
@@ -145,7 +145,7 @@
         android:textSize="12sp" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/et_keteranganPinjaman"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@+id/textView245"
@@ -155,8 +155,7 @@
         android:background="@color/GraySkunder"
         android:fontFamily="@font/poppins_light"
         android:inputType="textMultiLine"
-        android:textSize="12sp"
-        android:focusable="false"/>
+        android:textSize="12sp"/>
 
     <Button
         android:id="@+id/btnRincianSimulasi"

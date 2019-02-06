@@ -14,8 +14,7 @@
         <RelativeLayout
             android:id="@+id/rlv_tambahSimpanan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_abuabu_putih_kotak">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/textView4"
@@ -84,8 +83,7 @@
                         android:inputType="number"
                         android:textColor="@color/BluePrimer"
                         android:textColorHint="@color/BluePrimer"
-                        android:textSize="14sp"
-                        android:focusable="false"/>
+                        android:textSize="14sp"/>
 
                 </android.support.design.widget.TextInputLayout>
             </RelativeLayout>
@@ -117,7 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginTop="-12dp"
+                    android:layout_marginTop="-8dp"
                     android:layout_marginRight="16dp"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/poppins_medium"
@@ -173,8 +171,7 @@
                     android:inputType="textMultiLine"
                     android:padding="4dp"
                     android:textColor="@color/BlackPrimer"
-                    android:textSize="10sp"
-                    android:focusable="false"/>
+                    android:textSize="10sp" />
             </LinearLayout>
 
             <TextView

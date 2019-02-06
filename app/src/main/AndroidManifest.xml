@@ -30,20 +30,77 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".PilihKoperasi" />
+        <activity
+            android:name=".PilihKoperasi"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SimpanPinjam"
-            android:label="@string/title_activity_simpan_pinjam" />
-        <activity android:name=".Login" />
-        <activity android:name=".Daftar" />
-        <activity android:name=".SimpanPinjamBayarPinjaman" />
-        <activity android:name=".SimpanPinjamDataPengajuan" />
-        <activity android:name=".SimpanPinjamLaporanPembayaran" />
-        <activity android:name=".SimpanPinjamLaporanPinjaman" />
-        <activity android:name=".SimpanPinjamLaporanSimpanan" />
-        <activity android:name=".SimpanPinjamPengajuanBaru" />
-        <activity android:name=".SimpanPinjamTambahSimpanan" />
-        <activity android:name=".SimulasiPinjaman"></activity>
+            android:configChanges="orientation"
+            android:label="@string/title_activity_simpan_pinjam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Simpin"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Daftar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SimpanPinjamBayarPinjaman"
+            android:configChanges="orientation"
+            android:label="Bayar Pinjaman"
+            android:parentActivityName=".Simpin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeIII"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SimpanPinjamDataPengajuan"
+            android:configChanges="orientation"
+            android:label="Data Pengajuan"
+            android:parentActivityName=".Simpin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeIII" />
+        <activity
+            android:name=".SimpanPinjamLaporanPembayaran"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SimpanPinjamLaporanPinjaman"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SimpanPinjamLaporanSimpanan"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SimpanPinjamPengajuanBaru"
+            android:configChanges="orientation"
+            android:label="Pengajuan Pinjaman"
+            android:parentActivityName=".Simpin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeIII"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SimpanPinjamTambahSimpanan"
+            android:configChanges="orientation"
+            android:label="Tambah Simpanan"
+            android:parentActivityName=".Simpin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeIII"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SimulasiPinjaman"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RekeningKoperasi"></activity>
     </application>
 
 </manifest>
