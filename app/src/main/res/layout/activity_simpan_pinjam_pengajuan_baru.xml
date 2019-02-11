@@ -102,7 +102,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/bg_spinner"
+        android:background="@drawable/bg_spinner_abuabuMuda"
         android:entries="@array/jnsPinjaman"
         android:popupBackground="@color/GraySkunder"
         tools:ignore="NewApi" />
@@ -128,7 +128,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/bg_spinner"
+        android:background="@drawable/bg_spinner_abuabuMuda"
         android:fontFamily="@font/poppins_light"
         tools:ignore="NewApi" />
 

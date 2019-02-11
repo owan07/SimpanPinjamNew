@@ -143,7 +143,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginRight="16dp"
-                    android:background="@drawable/bg_spinner"
+                    android:background="@drawable/bg_spinner_abuabuMuda"
                     android:fontFamily="@font/poppins_light" />
 
                 <TextView

@@ -23,30 +23,78 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginRight="24dp"
-        android:background="@drawable/bg_kotakputih"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            app:srcCompat="@drawable/newkoperasi" />
+            android:fontFamily="@font/poppins_light"
+            android:text="Pilih Provinsi Koperasi Anda"
+            android:textColor="@color/BlackPrimer" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/sp_pilihProvinsi"
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="35dp"
+            android:background="@drawable/bg_spinner_putih" />
 
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Pilih Kabupaten Koperasi Anda"
+            android:textColor="@color/BlackPrimer" />
+
+        <Spinner
+            android:id="@+id/sp_pilihKabupaten"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_spinner_putih" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Pilih Kecamatan Koperasi Anda"
+            android:textColor="@color/BlackPrimer" />
+
+        <Spinner
+            android:id="@+id/sp_pilihKecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_spinner_putih" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Pilih Nama Koperasi Anda"
+            android:textColor="@color/BlackPrimer" />
+
+        <Spinner
+            android:id="@+id/sp_pilihKoperasi"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_spinner_putih" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_pilihKoperasi"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/bg_kotakputih"
         android:fontFamily="@font/poppins"
         android:text="@string/selesai"
